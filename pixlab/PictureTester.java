@@ -84,7 +84,13 @@ public class PictureTester
       beach.KeepOnlyBlue();
       beach.explore();
     }
-    
+    public static void testCopy()
+    {
+        Picture ocean = new Picture("beach.JPG");
+        Picture flower = new Picture("flower1.JPG");
+        ocean.copy(flower,50,100);
+        ocean.explore();
+    }
   /** Main method for testing.  Every class can have a main
     * method in Java */
   public static void main(String[] args)
@@ -105,8 +111,9 @@ public class PictureTester
     //testMirrorArms();
     //testMirrorGull();
     //testMirrorDiagonal();
-    testCollage();
-    //testCopy();
+    //testCollage();
+    
+    testCopy();
     //testEdgeDetection();
     //testEdgeDetection2();
     //testChromakey();
